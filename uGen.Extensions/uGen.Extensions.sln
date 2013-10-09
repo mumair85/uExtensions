@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{2F00BCEB-3D88-4075-AD8F-A299DDAC9C52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uGen.Extensions", "Extensions\uGen.Extensions.csproj", "{2F00BCEB-3D88-4075-AD8F-A299DDAC9C52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
