@@ -1,4 +1,4 @@
 uGen.Extensions
 ===============
 
-Collection of c# extension methods
+Collection of various extension methods for .net
