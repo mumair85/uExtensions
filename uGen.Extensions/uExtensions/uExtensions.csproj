@@ -7,8 +7,8 @@
     <ProjectGuid>{2F00BCEB-3D88-4075-AD8F-A299DDAC9C52}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>uGen.Extensions</RootNamespace>
-    <AssemblyName>uGen.Extensions</AssemblyName>
+    <RootNamespace>uExtensions</RootNamespace>
+    <AssemblyName>uExtensions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
