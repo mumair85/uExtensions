@@ -162,5 +162,21 @@ namespace uExtensions
             }
             return result;
         }
+
+        /// <summary>
+        /// Pass the link to convert it to string hyperlink html tag
+        /// </summary>
+        /// <param name="link">Text in the form of link (or this can be # or a javascript code)</param>
+        /// <param name="text">Optional text to display when passing in a link</param>
+        /// <param name="openInNewTab">Optional boolean to open the link in new tab</param>
+        /// <returns></returns>
+        public static string ToHyperlinkHtml(this string link, string text = "", bool openInNewTab = false)
+        {
+            var a = "<a href='" + link + "'"
+                    + (openInNewTab ? "target='_blank'" : "") + ">"
+                    + (text.IsNullOrEmpty() ? link : text) + "</a>";
+
+            return a;
+        }
     }
 }
