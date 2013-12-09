@@ -178,5 +178,42 @@ namespace uExtensions
 
             return a;
         }
+
+        /// <summary>
+        /// Convert a string to integer value, or pass 0 if default value is not provided
+        /// </summary>
+        /// <param name="val">Value to convert</param>
+        /// <param name="defaultValue">Default value to return if convert is not successful or null is passed</param>
+        /// <returns>Integer value</returns>
+        public static int ToInt(this string val, int defaultValue = 0)
+        {
+            var dVal = defaultValue;
+            int.TryParse(val, out dVal);
+            return dVal;
+        }
+
+        //TODO: Add more characters
+        /// <summary>
+        /// Converts special character to html encoded strings such as & \ ' etc
+        /// </summary>
+        /// <param name="strText">Input text to convert</param>
+        /// <returns>String of converted text</returns>
+        public static string ToHtmlCharacters(this string strText)
+        {
+            string strReturn = "" + strText;
+
+            strReturn = strReturn.Replace("&", "&amp;");
+            strReturn = strReturn.Replace("\"", "&quot;");
+            strReturn = strReturn.Replace("'", "&#39;");
+            strReturn = strReturn.Replace("<", "&lt;");
+            strReturn = strReturn.Replace(">", "&gt;");
+
+            return (strReturn);
+        }
+
+        //private static string ToQueryString(NameValueCollection nvc)
+        //{
+        //    return "?" + string.Join("&", Array.ConvertAll(nvc.AllKeys, key => string.Format("{0}={1}", HttpUtility.UrlEncode(key), HttpUtility.UrlEncode(nvc[key]))));
+        //}
     }
 }
